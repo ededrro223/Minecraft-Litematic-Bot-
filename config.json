@@ -1,17 +1,11 @@
 {
 
-   "ip": "mc-sbs.com",
-   "version":"1.20.2",
-   "usernames":["Xpoteto"],
-  "whitelist": [
-    "ED_Xian",
-    "suisuisuisuii",
-    "Okidai",
-    "Monlulu",
-    "MelonRind",
-    "MypoL",
-    "wsx3611601"
-  ]
+  "ip": "mc-sbs.com",
+  "version":"1.20.2",
+  "usernames":["Xpoteto"],
+ "whitelist": ["ED_Xian"
+
+ ]
 } 
 
 
