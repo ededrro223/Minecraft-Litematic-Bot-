@@ -1,0 +1,49 @@
+Config 教學
+如果開啟BOT出現CONFIG或者SETTING錯誤 直接複製以下格式，根據自己的需要進行修改，# 字號後面不要複製：
+
+json
+複製程式碼
+{
+   "ip": "mc-sbs.com",  # 伺服器IP
+   "version": "1.20.2", # 遊戲版本
+   "usernames": ["Xpoteto"],  # 你申請的ID
+   "whitelist": [  # 白名單，可以添加多個ID，接受TPA請求等
+       "ED_Xian",
+       "ED_Xian_2"
+   ]
+}
+
+
+Setting 教學
+如果開啟BOT出現CONFIG或者SETTING錯誤,直接複製以下格式，根據需要進行修改，# 字號後面不要複製：
+
+{
+   "log": false,    # 在黑窗中輸出BOT的訊息
+   "Work": false,   # 是否啟用自動蓋圖，可以預設為關閉，使用 /m bot build 指令運作，下方會有詳細教學
+   "WorkingServer": 10   # 如果啟用 Work，則上線時會檢查是否存在分流錯誤
+}
+
+
+
+指令 教學
+以下是指令格式及使用範例：
+指令格式
+
+/m bot 指令 參數1 參數2 參數3 .....
+目前提供的功能及範例
+
+        功能 和 範例
+
+【轉分流】	/m bot server 數字
+範例 /m ED server 3
+
+【清空包包】	/m bot dropall
+範例 /m ED dropall
+
+【自動蓋圖】	/m bot build x y z 藍圖名稱.副檔名
+範例 /m ED build 10 10 10 ED.litematic 或 /m ED build 10 10 10 ED.nbt
+注意：附檔名非常重要，根據你放置的文件進行輸入
+
+目前版本
+2021/10/18 V1
+
