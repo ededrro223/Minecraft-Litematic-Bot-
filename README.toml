@@ -1,8 +1,7 @@
 Config 教學
 如果開啟BOT出現CONFIG或者SETTING錯誤 直接複製以下格式，根據自己的需要進行修改，# 字號後面不要複製：
 
-json
-複製程式碼
+
 {
    "ip": "mc-sbs.com",  # 伺服器IP
    "version": "1.20.2", # 遊戲版本
@@ -44,6 +43,4 @@ Setting 教學
 範例 /m ED build 10 10 10 ED.litematic 或 /m ED build 10 10 10 ED.nbt
 注意：附檔名非常重要，根據你放置的文件進行輸入
 
-目前版本
-2021/10/18 V1
 
