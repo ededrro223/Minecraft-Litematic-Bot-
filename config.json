@@ -3,9 +3,11 @@
   "ip": "mc-sbs.com",
   "version":"1.20.2",
   "usernames":["Xpoteto"],
- "whitelist": ["ED_Xian"
-
- ]
+  "whitelist": ["ED_Xian"],
+  "owner": ["ED_Xian"],
+  "DcID":["194082526992662528"],
+  "webhookId" : "1297622606765228144",
+  "webhookToken" : "1hhk_0r3n6IDrYj4ROE1WLWD-uMY2G5xKnCL7e6AGO5Qso-QGIt33sj-ofMV_u5_W1Av"
 } 
 
 
