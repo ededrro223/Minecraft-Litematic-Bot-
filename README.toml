@@ -8,15 +8,17 @@
 Config 教學
 如果在啟動 BOT 時出現 CONFIG 或 SETTING 錯誤，請直接複製以下格式，並根據自己的需要進行修改，# 號後面的部分不要複製：
 
-{
-   "ip": "mc-sbs.com",  # 伺服器IP
-   "version": "1.20.2", # 遊戲版本
-   "usernames": ["Xpoteto"],  # 你申請的ID
-   "whitelist": [  # 白名單，可以添加多個ID，接受TPA請求等
-       "ED_Xian",
-       "ED_Xian_2"
-   ]
-}
+ config.json
+    {
+      "ip": ${`${config.ip}`.brightGreen},# 伺服器的 IP
+      "version": ${`${config.version}`.brightGreen},# 伺服器的版本
+      "usernames": ${`${config.usernames}`.brightG,#reen},# Bot 的名稱
+      "DcID": ${`${config.DcID}`.brightGreen},#
+      "whitelist": ${`${config.whitelist}`.brightGreen},# 白名單，可以多位玩家
+      "owner": ${`${config.owner}`.brightGreen},# 對 Bot 進行操作的主要使用者
+      "webhookId": ${`${config.webhookId}`.brightGreen},# Discord 房間的 webhookId
+      "webhookToken": ${`${config.webhookToken}`.brightGreen}# Discord 房間的 Token
+    }
 Setting 教學
 如果在啟動 BOT 時出現 CONFIG 或 SETTING 錯誤，請直接複製以下格式，並根據需要進行修改，# 號後面的部分不要複製：
 }
