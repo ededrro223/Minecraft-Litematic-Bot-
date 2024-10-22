@@ -34,7 +34,6 @@
 3️⃣ Setting 教學
 如果遇到 config 或 setting 錯誤，請使用以下範本進行修改：
 
-
 {
    "log": false,        # 是否輸出 BOT 的訊息
    "Work": false,       # 是否啟用自動建築功能
