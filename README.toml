@@ -1,62 +1,70 @@
-Minecraft Bot 自動化腳本教學
-檔案下載連結:  https://drive.google.com/file/d/1KPebbJIzHaiFBwJXG8hCYx5N4HnlFLnb/view?usp=sharing
+✨ Minecraft Bot 自動化腳本教學 ✨
+📂 檔案下載連結
 
-版本: V6 (2024/10/22/04:29)
+🆕 版本: V6 (2024/10/22/04:29)
 
-簡介
-這是一個Minecraft自動化腳本，專為自動完成伺服器內的日常操作而設計。你可以使用該腳本進行自動建築、清空背包、轉分流等操作。**請務必在伺服器允許的情況下使用，違反伺服器規則導致帳號封禁，本人不負責。**使用此腳本即視為同意本條款。
+📖 簡介
+這是一個為 Minecraft 設計的自動化腳本，專門用來幫助你自動完成伺服器內的日常操作，如自動建築、清空背包和轉分流等。
 
-安裝與設定
-1. 初次設定
-下載並解壓縮文件後，請將build資料夾內的Bot_ID修改為你想使用的Bot ID。
-如果啟動過程中遇到閃退問題，請用 Powershell 執行，並將錯誤截圖上傳至Discord進行反饋。注意：請先確認config、setting和build這三個文件都已正確修改再報告錯誤。
-2. Config 教學
-以下是基本的config.json配置範本，根據你的需求進行修改：
+⚠️ 請務必遵守伺服器規則。使用該腳本視為同意，違規導致帳號被封禁，本人不負責。
 
+⚙️ 安裝與設定
+1️⃣ 初次設定
+下載並解壓縮文件後，將 build 資料夾內的 Bot_ID 修改為你要使用的 Bot ID。
+
+如果發現閃退，請使用 Powershell 開啟，並將錯誤截圖上傳至 Discord 反饋。
+
+⚠️ 注意：請先確認 config、setting 和 build 這三個文件均已正確修改再報告錯誤。
+
+2️⃣ Config 教學
+以下是 config.json 的基本配置範本，根據你的需求進行修改：
 
 {
-  "ip": "你的伺服器IP",  # 伺服器的 IP
-  "version": "伺服器版本",  # Minecraft 伺服器版本
-  "usernames": "你的Bot名稱",  # Bot的名稱
-  "DcID": "你的Discord ID",  # Discord ID
-  "whitelist": "白名單玩家",  # 可多位玩家
-  "owner": "你的名稱",  # Bot 的操作主要用戶
-  "webhookId": "你的Discord webhookId",  # Discord 房間的webhookId
-  "webhookToken": "你的Discord webhook Token"  # Discord 房間的Token
+  "ip": "你的伺服器IP",            # 伺服器的 IP
+  "version": "伺服器版本",         # Minecraft 伺服器版本
+  "usernames": "你的Bot名稱",      # Bot 的名稱
+  "DcID": "你的Discord ID",        # Discord ID
+  "whitelist": "白名單玩家",       # 可多位玩家
+  "owner": "你的名稱",             # Bot 的操作主要用戶
+  "webhookId": "你的Discord webhookId",  # Discord 房間的 webhookId
+  "webhookToken": "你的Discord webhook Token"  # Discord 房間的 Token
 }
-3. Setting 教學
-如果在啟動過程中遇到config或setting錯誤，請使用以下範本進行修改：
+
+3️⃣ Setting 教學
+如果遇到 config 或 setting 錯誤，請使用以下範本進行修改：
 
 
 {
-   "log": false,    # 是否輸出BOT的訊息
-   "Work": false,   # 是否啟用自動建築功能
+   "log": false,        # 是否輸出 BOT 的訊息
+   "Work": false,       # 是否啟用自動建築功能
    "WorkingServer": 10  # 啟用 Work 後檢查伺服器是否存在分流錯誤
 }
-指令教學
-以下是遊戲內白名單玩家與Bot的常用指令格式與範例：
 
-1. 轉分流
-bash
-複製程式碼
+
+🛠️ 指令教學
+以下是遊戲內白名單玩家與 Bot 的常用指令格式及範例：
+
+1️⃣ 轉分流
 /m bot server [數字]
-範例: /m ED server 3
-2. 清空包包
-bash
-複製程式碼
-/m bot dropall
-範例: /m ED dropall
-3. 自動蓋圖
+# 範例: /m ED server 3
 
-複製程式碼
+2️⃣ 清空包包
+/m bot dropall
+# 範例: /m ED dropall
+
+3️⃣ 自動蓋圖
 /m bot build [x] [y] [z] [藍圖名稱.副檔名]
-範例: /m ED build 10 10 10 ED.litematic 或 /m ED build 10 10 10 ED.nbt
-注意事項
-伺服器 IP 和版本：確保正確填寫伺服器的 IP 和 Minecraft 版本，避免連接失敗。
-指令格式：所有指令均以/m bot開頭，後面接具體的參數。
-白名單：你可以在whitelist中添加多個玩家的 ID，這樣可以允許他們與 Bot 進行互動。
-常見問題
-Bot 閃退問題：
-使用 Powershell 啟動，並將錯誤截圖發送至Discord進行反饋。
-配置文件錯誤：
-確認config和setting文件格式正確，參照上述範例進行調整。
+# 範例: /m ED build 10 10 10 ED.litematic 或 /m ED build 10 10 10 ED.nbt
+
+
+⚠️ 注意事項
+伺服器 IP 和版本：請確保正確填寫伺服器的 IP 和 Minecraft 版本，避免連接失敗。
+指令格式：所有指令均以 /m bot 開頭，後面接具體的操作參數。
+白名單：你可以在 whitelist 中添加多個玩家的 ID，允許他們與 Bot 互動（如接受 TPA 請求）。
+
+❓ 常見問題
+1️⃣ Bot 閃退問題
+使用 Powershell 啟動，並將錯誤截圖發送至 Discord 進行反饋。
+2️⃣ 配置文件錯誤
+確認 config 和 setting 文件格式正確，參照上面的範例進行調整。
+
