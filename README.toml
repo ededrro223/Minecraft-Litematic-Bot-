@@ -1,93 +1,63 @@
-# One For All 
-[![License](https://img.shields.io/github/license/PKUFlyingPig/cs-self-learning)](https://github.com/JKLoveUU/One-For-All-Minecraft-Bot/blob/main/LICENSE)
-[![Official Discord](https://img.shields.io/static/v1.svg?label=OFFICIAL&message=DISCORD&color=blue&logo=discord&style=for-the-badge)](https://discord.gg/xUWg4CJ7FC)
 
-Minecraft Bot for McFallout server.
-
-## Tutorial
-- [EULA](docs/zh_tw/eula.md)
-
-- [[Discord](https://discord.gg/xUWg4CJ7FC)] https://discord.gg/xUWg4CJ7FC 
-- [使用教學](docs/zh_tw/usage.md)
-- [設定](docs/zh_tw/setting.md)
-- [指令](docs/zh_tw/commands.md)
-- [地圖畫](docs/zh_tw/Mapart.md)
-- [兌換](docs/zh_tw/CraftAndExchange.md)
-
-- [突襲](docs/zh_tw/setting.md) 設定教學
-
-## Contribute
-- [MelonRind](https://github.com/aMelonRind) 目前的bot架構 / 突襲 
-- [CZKKKK](https://github.com/AvaCZK) 撰寫設定教學
-## 已知錯誤
-
-[使用體驗不佳 原因未知] 經驗目前 總值 = 等級  等級是不準確的
-
-[網路&DC_API錯誤] Discord Fetch Error 時，會重複發送dc面板
-
-[使用體驗不佳] 還沒init 完成時 使用某些指令會報錯
-
-[不影響] logger send to parent 會有時差 導致訊息順序不易觀看
-
-[不影響] linux 下  exitcode 過大 (>256) 
-
-mapart stop 時 還續繼續蓋下一張 
-
-mapart 補材料時 分流重啟 多耗時很久
-[低概率] mapart 切換分流後 server mpdb 無 可判別背包加載完成訊息 導致切錯材料蓋錯
-
-## Features
-### Current
-* Discord
-    1. Pass to CMD Console
-    2. Control & Forward
-    3. Display Status
-* Agent
-    1. Task Scheduling
-    2. Regular Restart (no longer necessary)
-* DM Control
-    1. Pass to CMD Console
-* CMD Console
-    1. Identify Command Source (DM / DC / Console)
-    and reflect accordingly in the appropriate location
-#### Exchange(ShopItem) 
-
-### Planing
-* Discord
-    1. 突襲介面
-    2. 其他功能的介面
-* Console
-    1. 將log檔案重新命名
-    2. TAB completer
-    3. command usage suggest
-    4. .help .?
-* MC-Feature
-    1. Clear Area
-    2. ~~Villager Trading~~
---- 
-## Develop
-
-`git clone https://github.com/JKLoveUU/Bot2.git`
-
-`cd `
-
-`npm install`
-
-`node .`
-(Node v18.16.0)
-
-有修改 Mineflayer & Protocol 內部分功能
-
-- bot.lookAt() 直接return
-    node_modules\mineflayer\lib\plugins\physics.js
-- swingArm() 直接return
-    node_modules\mineflayer\lib\plugins\entities.js
-- keepAlive Emit Error 部分 return
-    node_modules\minecraft-protocol\src\client\keepalive.js
-
-### 格式
-若有新功能 仿照src/template.js 和 lib/
+檔案下載連結:  https://drive.google.com/file/d/1KPebbJIzHaiFBwJXG8hCYx5N4HnlFLnb/view?usp=sharing
+版本: V5  2024/10/22/04:29
+自動化腳本教學
+申明
+無論是購買或免費版本，如果因為違反伺服器規則而被禁止登入，本人無任何責任。使用該腳本即視為同意此條款。
 
 
-## License
-[MIT](/LICENSE)
+
+初次使用需要把build資料夾內的 Bot_ID　改為你要開的Bot ID
+
+
+如果開啟Bot發現閃退 請用Powershell 開  然後錯誤截圖上傳至Discord 請先確定config setting  buiild 這三個 都有更改再回報
+
+
+
+Config 教學
+如果在啟動 BOT 時出現 CONFIG 或 SETTING 錯誤，請直接複製以下格式，並根據自己的需要進行修改，# 號後面的部分不要複製：
+
+ config.json
+    {
+      "ip": ${`${config.ip}`.brightGreen},# 伺服器的 IP
+      "version": ${`${config.version}`.brightGreen},# 伺服器的版本
+      "usernames": ${`${config.usernames}`.brightG,#reen},# Bot 的名稱
+      "DcID": ${`${config.DcID}`.brightGreen},#
+      "whitelist": ${`${config.whitelist}`.brightGreen},# 白名單，可以多位玩家
+      "owner": ${`${config.owner}`.brightGreen},# 對 Bot 進行操作的主要使用者
+      "webhookId": ${`${config.webhookId}`.brightGreen},# Discord 房間的 webhookId
+      "webhookToken": ${`${config.webhookToken}`.brightGreen}# Discord 房間的 Token
+    }
+Setting 教學
+如果在啟動 BOT 時出現 CONFIG 或 SETTING 錯誤，請直接複製以下格式，並根據需要進行修改，# 號後面的部分不要複製：
+}
+   "log": false,    # 在黑窗中輸出 BOT 的訊息
+   "Work": false,   # 是否啟用自動蓋圖，可以預設為關閉，使用 /m bot build 指令來運作，下方有詳細教學
+   "WorkingServer": 10   # 如果啟用 Work，則上線時會檢查是否存在分流錯誤
+}
+
+
+指令 教學(遊戲內白名單玩家和密語給Bot)
+以下是指令格式及使用範例：
+
+指令格式
+/m bot 指令 參數1 參數2 參數3 .....
+
+目前提供的功能及範例
+
+【轉分流】	/m bot server 數字
+/m ED server 3
+
+【清空包包】	/m bot dropall
+/m ED dropall
+
+
+ 注意：附檔名非常重要，根據你放置的文件正確輸入
+【自動蓋圖】	/m bot build x y z 藍圖名稱.副檔名  
+/m ED build 10 10 10 ED.litematic 或 /m ED build 10 10 10 ED.nbt
+
+
+注意事項
+伺服器 IP 和版本：確保正確填寫伺服器的 IP 和 Minecraft 版本，以便正確連接伺服器。
+指令格式：所有指令均以 /m bot 開頭，後面加上具體的功能參數，根據具體操作進行調整。
+白名單：你可以在 whitelist 中添加多個玩家的 ID，這樣可以允許他們和 BOT 進行互動（如接受 TPA 請求）。
