@@ -13,7 +13,14 @@
 1️⃣ 初次設定
 下載並解壓縮文件後，將 build 資料夾內的 Bot_ID 修改為你要使用的 Bot ID。
 
-如果發現閃退，請使用 Powershell 開啟，並將錯誤截圖上傳至 Discord 反饋。
+如果發現閃退，請使用 Powershell(Win + R 然後輸入 powershell) 開啟，並將錯誤截圖上傳至 Discord 反饋。
+使用 powershell開啟Bot的方式:
+  打開 powershell 之後 ,複製程式所在的資料夾路徑  
+  然後
+ 1. cd 路徑 
+ 2. 輸入 ED　按下鍵盤TAB   
+ 3. 出現 ED_litematicbot.exe 按下Enter 
+ 4. 這樣就打開Bot了 然後就是按照教學的部分登入 遇到錯誤之後不會閃退 把錯誤上傳至DC 如果是 config setting 錯誤 請看下方自行解決
 
 ⚠️ 注意：請先確認 config、setting 和 build 這三個文件均已正確修改再報告錯誤。
 
@@ -40,6 +47,21 @@
    "WorkingServer": 10  # 啟用 Work 後檢查伺服器是否存在分流錯誤
 }
 
+🛠️ 終端機指令教學
+請注意以. 開頭 (點 空白)
+
+
+1️⃣ 登入Bot
+.start [ID]  或者 .s [ID] 
+# 範例: .start ED_Xian .s ED_Xian
+
+2️⃣ 讓Bot說話
+.say botId 訊息 或者指令
+# 範例: .say ED /tpa ED
+
+3️⃣ 關閉Bot
+.stop [ID]  
+# 範例: .stop ED_Xian 
 
 🛠️ 指令教學
 以下是遊戲內白名單玩家與 Bot 的常用指令格式及範例：
