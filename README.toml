@@ -30,6 +30,7 @@
 
 ⚠️ 注意：請先確認 config、setting 和 build 這三個文件均已正確修改再報告錯誤。
 
+如果遇到 config 或 setting 錯誤，請使用以下範本進行修改：
 2️⃣ Config 教學
 以下是 config.json 的基本配置範本，根據你的需求進行修改：
 
@@ -45,7 +46,7 @@
 }
 
 3️⃣ Setting 教學
-如果遇到 config 或 setting 錯誤，請使用以下範本進行修改：
+
 
 {
    "log": false,        # 是否輸出 BOT 的訊息
