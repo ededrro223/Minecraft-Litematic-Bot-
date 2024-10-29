@@ -1,13 +1,27 @@
 ✨ Minecraft Bot 自動化腳本教學 ✨
 
 
-📂 檔案下載連結   https://drive.google.com/file/d/1digop_aqWBDgZt5fCOeiW4azzVWYh-j9/view?usp=sharing
-🆕 版本:V7      2024/10/23 1:47AM
+📂 檔案下載連結   https://drive.google.com/file/d/1cVYN_UZJgoYJi12jcUqNvw4cS58V-6Rm/view?usp=sharing
+🆕 版本:V8     2024\10\30\2:49 AM
 🛠️ 更新內容:
 
 版本    日期
- V6  2024/10/22/04:29
+ V8  2024\10\30\2:49 AM  新增驗證系統 錯誤回報通知 
+ V6  2024/10/22/04:29 小更新
  V7  2024/10/23 1:47AM  創立bot .s 一個英文字 按下TAB自動補全
+
+⚠️【V8】大更新 請一定要看這教學
+  ⚠️⚠️⚠️先別打開程式，第四點特別重要⚠️⚠️⚠️ 
+1️⃣ 此次更新新增個檔案 key.txt (可以直接自己在資料夾新增一個)
+2️⃣ 請先設定好 key.txt   在 這個txt鐘輸入序號,儲存後就可以開啟程式了
+3️⃣ 建議一律使用 "PowerShell" 開啟Bot 此次錯誤 都會回報錯誤碼 截圖 傳給ED
+4️⃣ 如果要關閉Bot 請使用 CTRL +C 2 次 絕對不要直接按＂Ｘ＂關閉　如果按了 序號會無法使用要通知 ED 時間不會補
+ 
+
+
+
+
+
 
 
 📖 簡介
