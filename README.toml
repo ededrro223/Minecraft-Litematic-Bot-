@@ -1,11 +1,12 @@
 ✨ Minecraft Bot 自動化腳本教學 ✨
 
 
-📂 檔案下載連結   https://drive.google.com/file/d/1cVYN_UZJgoYJi12jcUqNvw4cS58V-6Rm/view?usp=sharing
-🆕 版本:V8     2024\10\30\2:49 AM
+📂 檔案下載連結   https://drive.google.com/file/d/1GQrZJS5ttZ8gX57ZTf0hotKSHyNoAAMc/view?usp=drive_link
+🆕 V9  2024\10\30 18:10PM 
 🛠️ 更新內容:
 
 版本    日期
+ V9  2024\10\30 18:10PM  修復 DC問題 
  V8  2024\10\30 2:49AM  新增驗證系統 錯誤回報通知 
  V6  2024/10/22 04:29 小更新
  V7  2024/10/23 1:47AM  創立bot .s 一個英文字 按下TAB自動補全
@@ -17,15 +18,6 @@
 2️⃣ 請先設定好 key.txt   在 這個txt鐘輸入序號,儲存後就可以開啟程式了
 3️⃣ 如果要關閉Bot 請使用 CTRL +C 2 次 絕對不要直接按＂Ｘ＂關閉　如果按了 序號會無法使用要通知 ED 時間不會補
  
-
- 
-
-
-
-
-
-
-
 📖 簡介
 這是一個為 Minecraft 設計的自動化腳本，專門用來幫助你自動完成伺服器內的日常操作，如自動建築、清空背包和轉分流等。
 
