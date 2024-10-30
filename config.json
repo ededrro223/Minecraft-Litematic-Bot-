@@ -2,7 +2,7 @@
 
   "ip": "mc-sbs.com",
   "version":"1.20.2",
-  "usernames":["Xpoteto"],
+  "usernames":"Xpoteto",
   "whitelist": ["ED_Xian"],
   "owner": ["ED_Xian"],
   "DcID":["194082526992662528"],
